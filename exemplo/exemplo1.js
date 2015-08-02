@@ -1,23 +1,4 @@
-# nome-sobrenome  
-
-Separa o nome do sobrenome de uma pessoa.
-
-Este pacote tem a intenção de servir como um auxiliador para separar o nome e sobrenome de uma pessoa, tenha em mente que 
-não é agarantida a separação exata, pois isto depende do padrão convencionado, foram implementados apenas alguns casos comuns, 
-caso encontre algum outro, sinta-se à vontade para realizar a alteração e fazer um pull request.  
-
-Lembrando também que este pacote foi desenvolvido especificamente para o idioma pt-BR.  
-
-Utilização
------  
-
-```
-npm install nome-sobrenome
-```  
-
-```javascript
-
-var nomeSobrenome = require("nome-sobrenome");
+var nomeSobrenome = require('../nomesobrenome.js');
 
 /* Nomes de exemplos apenas */
 var nomes = [
@@ -44,7 +25,3 @@ nomes.forEach(function(element) {
     console.log( 'Sobrenome: ' + nomeSobrenome.sobrenome(element.nome) );
     console.log( '------------------------');
 }, this);
-
-```  
-
-Obrigado  
